@@ -1,0 +1,40 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.hero {
+    padding: 200px 0 200px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--title-grey-color);
+
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+}
+
+.hero__title {
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 44px;
+    line-height: 1.1;
+    color: var(--primary-white-color);
+}
+
+.hero__button {
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 10px 32px 10px 32px;
+
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: none;
+}
