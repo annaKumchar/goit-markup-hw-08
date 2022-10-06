@@ -20,12 +20,13 @@
 
   <body>
     <!--Шапка-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container main-nav">
         <nav class="header-nav">
           <a href="/index.html" lang="en" class="logo">
             <span class="logo-start">Web</span>Studio</a
           >
+
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="current link">Студія</a>
@@ -38,6 +39,11 @@
             </li>
           </ul>
         </nav>
+          <button type="button" class="burger-menu js-open-menu">
+            <svg class="burger-menu__icon" width="40" height="40">
+              <use href="./images/burger.svg#icon-burger"></use>
+            </svg>
+          </button>
         <ul class="site-contacts list">
           <li class="item site-contact-icons">
             <a href="mailto:info@devstudio.com" class="link">
@@ -56,10 +62,10 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!--Оглавленuие-->
 <main>
-      <!-- <section class="hero section ">
+      <section class="hero section ">
         <div class="hero__container container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -67,7 +73,7 @@
           </h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
-          </button> -->
+          </button>
 
       </section>
       <!--Особливості-->
@@ -127,34 +133,58 @@
         </div>
       </section>
       <!--Чим ми займаємося-->
-      <!-- <section class="work section ">
+      <section class="work section ">
         <div class="work__container container">
           <h2 class="work__title section__title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img src="./images/box1.jpg" alt="box 1" width="370" />
+              <img
+              class="work__image"
+              srcset="
+                  images/worl/work_01_d-min.jpg 1x,
+                  images/work/work_01_d@2x-min.jpg 2x"
+              src="./images/box1.jpg" alt="box 1" width="370" />
               <p class="work__txt">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/box2.jpg" alt="box 2" width="370" />
+              <img
+              class="work__image"
+              srcset="
+                  images/work/work_02_d-min.jpg 1x,
+                  images/work/work_02_d@2x-min.jpg 2x"
+              src="./images/box2.jpg" alt="box 2" width="370" />
               <p class="work__txt">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/box3.jpg" alt="box 3" width="370" />
+              <img
+              class="work__image"
+              srcset="
+                  images/work/work_03_d-min.jpg 1x,
+                  images/work/work_03_d@2x-min.jpg 2x"
+              src="./images/box3.jpg" alt="box 3" width="370" />
               <p class="work__txt">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
-      </section> --> --> -->
+      </section> 
       <!--Наша команда-->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="team__container container">
           <h2 class="team__title section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <img
-                src="images/igor.jpg"
-                alt="Photo Product Designer - Igor"
+              class="team__image"
+              srcset="
+                  images/team/team-01_m-min.jpg 450w,
+                  images/team/team-01_m@2x-min.jpg 900w,
+                  images/team/team-01_t-min.jpg 354w,
+                  images/team/team-01_t@2x-min.jpg 708w,
+                  images/team/team-01_d-min.jpg 270w,
+                  images/team/team-01_d@2x-min.jpg 540w"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw";
+                  src="images/igor.jpg"
+                  alt="Photo Product Designer - Igor"
                 width="270"
               />
               <div class="team__description">
@@ -194,6 +224,15 @@
             </li>
             <li class="team__item">
               <img
+              class="team__image"
+              srcset="
+                images/team/team-02_m-min.jpg 450w,
+                images/team/team-02_m@2x-min.jpg 900w,
+                images/team/team-02_t-min.jpg 354w,
+                images/team/team-02_t@2x-min.jpg 708w,
+                images/team/team-02_d-min.jpg 270w,
+                images/team/team-02_d@2x-min.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw";
                 src="images/olga.jpg"
                 alt="Photo Frontend Developer - Olga"
                 width="270"
@@ -235,6 +274,15 @@
             </li>
             <li class="team__item">
               <img
+              class="team__image"
+              srcset="
+                images/team/team-03_m-min.jpg 450w,
+                images/team/team-03_m@2x-min.jpg 900w,
+                images/team/team-03_t-min.jpg 354w,
+                images/team/team-03_t@2x-min.jpg 708w,
+                images/team/team-03_d-min.jpg 270w,
+                images/team/team-03_d@2x-min.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw";
                 src="images/nikola.jpg"
                 alt="Photo Marketing - Mikola"
                 width="270"
@@ -277,6 +325,15 @@
             </li>
             <li class="team__item">
               <img
+              class="team__image"
+              srcset="
+                images/team/team-04_m-min.jpg 450w,
+                images/team/team-04_m@2x-min.jpg 900w,
+                images/team/team-04_t-min.jpg 354w,
+                images/team/team-04_t@2x-min.jpg 708w,
+                images/team/team-04_d-min.jpg 270w,
+                images/team/team-04_d@2x-min.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw";
                 src="images/misha.jpg"
                 alt="Photo UI Designer - Misha"
                 width="270"
@@ -319,7 +376,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Наші партнери -->
       <section class="clients section">
         <div class="container">
@@ -371,7 +428,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-parts">
         <div class="footer-address">
           <a href="/index.html" class="logo">
@@ -435,10 +492,10 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
         <!-- Footer form -->
-<!-- 
+
           <form class="footer-form">
             <div class="footer-form-box">
               <label class="footer-label" for="email">підпишіться на розсилку</label>
@@ -453,6 +510,50 @@
           </form>
       </div>
     </footer>
+<!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg class="burger-menu__icon" width="40" height="40">
+        <use href="./images/burger.svg#icon-close_burger"></use>
+      </svg>
+      </button>
+<div class="menu-container__wrap" >
+        <ul class="mobile-nav list">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="current mobile-nav__link">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="" class="mobile-nav__link">Контакти</a>
+          </li>
+          </ul>
+
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__tel">
+              +38(069) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__email">info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-social list">
+          <li class="mobile-social__item"><a href="" class="mobile-social__link">Instagram</a> </li>
+          <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a> </li>
+          <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a> </li>
+          <li class="mobile-social__item"><a href="" class="mobile-social__link">LinkedIn</a> </li>
+        </ul>
+
+
+</div>
+    </div>
+    
+<!-- Modal -->
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -460,10 +561,10 @@
                   <svg class="svg-cross" width="10" height="16">
                     <use href="./images/sprite.svg#icon-cross"></use>
                   </svg>
-                </button> -->
+                </button>
 
       <!-- Form -->
-                  <!-- <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+                  <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
                     <form class="form">
                       <ul class="modal-form-list">
                       <li class="form-field">
@@ -513,8 +614,11 @@
                     </form>
 
             </div>
-        </div> -->
-
+        </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
